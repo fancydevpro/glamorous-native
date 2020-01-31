@@ -40,7 +40,7 @@ export default class ThemeProvider extends React.Component {
     }
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (this.context[CHANNEL]) {
       this.setOuterTheme(this.context[CHANNEL].getState())
       this.broadcast.setState(this.getTheme())

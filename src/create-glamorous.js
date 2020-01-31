@@ -40,7 +40,7 @@ export default function createGlamorous(splitProps) {
           this.onRef = this.onRef.bind(this)
         }
 
-        componentWillMount() {
+        UNSAFE_componentWillMount() {
           const {theme} = this.props
 
           if (this.context[CHANNEL]) {
