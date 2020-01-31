@@ -50,7 +50,7 @@ export default function createGlamorous(splitProps) {
           }
         }
 
-        componentWillReceiveProps(nextProps) {
+        UNSAFE_componentWillReceiveProps(nextProps) {
           if (this.props.theme !== nextProps.theme) {
             this.setTheme(nextProps.theme)
           }

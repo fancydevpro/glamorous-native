@@ -47,7 +47,7 @@ export default class ThemeProvider extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (this.props.theme !== nextProps.theme) {
       this.broadcast.setState(this.getTheme(nextProps.theme))
     }
